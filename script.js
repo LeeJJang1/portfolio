@@ -63,6 +63,7 @@
   function closeProject() {
     if (!dialog.open) return;
     if (imageDialog.open) imageDialog.close();
+    dialog.querySelectorAll("video").forEach(video => video.pause());
     dialog.close();
     if (location.hash === '#live-buddy') history.replaceState(null, '', location.pathname + location.search + precedingHash);
   }
@@ -79,7 +80,8 @@
     if (location.hash === '#live-buddy') openProject(false);
     else if (dialog.open) {
       if (imageDialog.open) imageDialog.close();
-      dialog.close();
+      dialog.querySelectorAll("video").forEach(video => video.pause());
+    dialog.close();
     }
   });
   if (location.hash === '#live-buddy') openProject(false);
