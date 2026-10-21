@@ -2,6 +2,22 @@
   'use strict';
   // Korean text is kept in the HTML; this dictionary supplies the English version.
   const english = {
+  "실제 동작을 기능별 클립으로 확인하세요": "Explore the app through short feature clips",
+  "실제 실행 녹화에서 채팅 반응, 캐릭터 관리, 방송 지표, 스트리머 대화 장면을 골랐습니다. 각 클립은 원래 속도로 재생되며, 화면 동작을 확인할 수 있도록 무음으로 제공됩니다.": "Excerpts from an actual app recording cover chat responses, character management, broadcast metrics and streamer conversations. Each silent clip plays at its original speed.",
+  "시청자 채팅과 AI 캐릭터 반응": "Viewer chat and AI character responses",
+  "앱에 들어온 시청자 채팅과 AI 답변, 캐릭터의 반응을 함께 보여줍니다.": "Shows incoming viewer chat, AI replies and character reactions inside the app.",
+  "캐릭터 목록과 방송 상태 관리": "Character list and broadcast state",
+  "캐릭터별 페르소나·호출어와 현재 방송 중인 캐릭터를 구분하는 관리 화면입니다.": "The management screen distinguishes each character\u2019s persona, call names and active broadcast state.",
+  "대화와 함께 확인하는 방송 지표": "Broadcast metrics alongside conversations",
+  "대화가 이어지는 동안 채팅 속도와 감정 비율을 같은 화면에서 확인합니다.": "Chat rate and sentiment ratios remain visible alongside the conversation.",
+  "스트리머와 AI의 대화 흐름": "Conversation between the streamer and AI",
+  "스트리머 발화와 AI 답변이 구분되어 쌓이고, 캐릭터의 말하기 상태가 바뀌는 모습을 담았습니다.": "Streamer utterances and AI replies appear as distinct messages while the character\u2019s speaking state changes.",
+  "원본 00:30–00:58 · 28초 · 무음": "Original 00:30\u201300:58 \u00b7 28 sec \u00b7 Silent",
+  "원본 01:24–01:42 · 18초 · 무음": "Original 01:24\u201301:42 \u00b7 18 sec \u00b7 Silent",
+  "원본 16:00–16:30 · 30초 · 무음": "Original 16:00\u201316:30 \u00b7 30 sec \u00b7 Silent",
+  "원본 17:18–18:00 · 42초 · 무음": "Original 17:18\u201318:00 \u00b7 42 sec \u00b7 Silent",
+  "영상은 개발자용 앱 화면입니다. 시청자에게 송출된 모습은 위 갤러리의 ‘실제 송출 연동 확인’ 이미지에서 확인할 수 있습니다. 화면 속 수치는 녹화 당시의 표시 값입니다.": "These clips show the developer\u2019s app interface. See the broadcast integration screenshot in the gallery above for the transmitted view. Metrics reflect values displayed during recording.",
+
   "방송 지표와 AI 대화를 한 화면에서 확인합니다": "Broadcast metrics and AI conversations in one view",
   "실제 실행 녹화에서 대시보드 구간을 발췌했습니다. 채팅 속도·감정 비율 등 방송 지표와 AI 대화, 캐릭터 반응을 함께 확인할 수 있습니다.": "An excerpt from an actual app recording, showing chat rate, sentiment ratios, AI conversations and character reactions in the dashboard.",
   "원본 16:00–16:30 · 30초 발췌 · 무음 · 화면 속 수치는 녹화 당시의 표시 값입니다.": "Original 16:00\u201316:30 \u00b7 30-second excerpt \u00b7 Silent \u00b7 Metrics reflect the values displayed during recording.",

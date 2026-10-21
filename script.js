@@ -71,6 +71,10 @@
   dialog.querySelector('.dialog-close').addEventListener('click', closeProject);
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeProject(); });
   dialog.addEventListener('close', finishClose);
+  dialog.addEventListener('play', event => {
+    if (!(event.target instanceof HTMLVideoElement)) return;
+    dialog.querySelectorAll('video').forEach(video => { if (video !== event.target) video.pause(); });
+  }, true);
   dialog.addEventListener('click', event => {
     if (event.target !== dialog) return;
     const box = dialog.getBoundingClientRect();
