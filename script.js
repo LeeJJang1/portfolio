@@ -56,6 +56,7 @@
     if (updateUrl) history.pushState(null, '', '#live-buddy');
   }
   function finishClose() {
+    dialog.querySelectorAll("video").forEach(video => video.pause());
     if (!imageDialog.open) document.body.classList.remove('modal-open');
     if (returnFocus instanceof HTMLElement) returnFocus.focus({ preventScroll: true });
   }

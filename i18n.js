@@ -2,6 +2,13 @@
   'use strict';
   // Korean text is kept in the HTML; this dictionary supplies the English version.
   const english = {
+  "방송 지표와 AI 대화를 한 화면에서 확인합니다": "Broadcast metrics and AI conversations in one view",
+  "실제 실행 녹화에서 대시보드 구간을 발췌했습니다. 채팅 속도·감정 비율 등 방송 지표와 AI 대화, 캐릭터 반응을 함께 확인할 수 있습니다.": "An excerpt from an actual app recording, showing chat rate, sentiment ratios, AI conversations and character reactions in the dashboard.",
+  "원본 16:00–16:30 · 30초 발췌 · 무음 · 화면 속 수치는 녹화 당시의 표시 값입니다.": "Original 16:00\u201316:30 \u00b7 30-second excerpt \u00b7 Silent \u00b7 Metrics reflect the values displayed during recording.",
+  "BROADCAST DASHBOARD / 실제 실행 영상": "BROADCAST DASHBOARD / APP RECORDING",
+  "Live Buddy 방송 대시보드 시연 영상": "Live Buddy broadcast dashboard demonstration",
+  "시연 영상 열기": "Open demonstration video",
+
   "본문으로 바로가기": "Skip to content",
   "이정현": "Jeonghyeon Lee",
   "이정현 — Developer": "Jeonghyeon Lee — Developer",
