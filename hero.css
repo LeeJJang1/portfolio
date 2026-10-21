@@ -1,0 +1,43 @@
+/* Decorative, continuously scrolling technology lanes. */
+.hero-scene{position:relative;isolation:isolate;overflow:hidden;background:var(--bg)}
+.hero-scene::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 87% 25%,#8acb4730,transparent 53%),radial-gradient(ellipse at 70% 75%,#3a99961c,transparent 50%)}
+.hero-tech-background{position:absolute;inset:0;z-index:-1;pointer-events:none;display:flex;flex-direction:column;justify-content:space-around;padding:35px 0 70px;opacity:.4;mask-image:linear-gradient(to right,#0003,#0008 40%,#000 75%);-webkit-mask-image:linear-gradient(to right,#0003,#0008 40%,#000 75%)}
+.hero-tech-track{display:flex;width:max-content;animation:hero-tech-scroll 65s linear infinite}
+.hero-tech-lane:nth-child(2) .hero-tech-track{animation-duration:80s;animation-direction:reverse}
+.hero-tech-lane:nth-child(3) .hero-tech-track{animation-duration:72s;animation-delay:-22s}
+.hero-tech-group{display:flex;gap:28px;padding-right:28px}
+.hero-tech-tile{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;width:156px;height:136px;border:1px solid #c8f48926;border-radius:22px;background:linear-gradient(145deg,#c8f4890e,#ffffff03);color:#c8d4bd;font-size:10px;font-weight:600;letter-spacing:.15em}
+.hero-tech-icon{font-family:"Apple Color Emoji","Segoe UI Emoji",sans-serif;font-size:43px;line-height:1.2;letter-spacing:0;filter:saturate(.7)}
+.hero-scene .hero{position:relative;padding-top:64px}
+.hero-scene .hero h1{font-size:clamp(42px,5.65vw,80px);line-height:1.22;letter-spacing:-.055em;margin:40px 0 34px;text-shadow:0 3px 28px var(--bg)}
+.hero-scene .outline-type{color:var(--accent);-webkit-text-stroke:0}
+.hero-scene .hero-bottom{padding-top:8px}
+.hero-scene .hero-headline{font-size:clamp(22px,2.4vw,31px);line-height:1.5;text-shadow:0 2px 18px var(--bg)}
+.hero-scene .hero-description,.hero-scene .hero-aside,.hero-scene .hero-eyebrow,.hero-scene .hero-profile{ text-shadow:0 2px 12px var(--bg),0 0 24px var(--bg)}
+.hero-scene .hero-aside{padding:18px 22px;border:1px solid var(--line);border-radius:10px;background:var(--header);backdrop-filter:blur(12px)}
+.hero-scene .hero-footer{gap:20px;margin-top:48px}
+.hero-motion-toggle{margin-left:auto;border:1px solid var(--line);border-radius:20px;background:var(--header);color:var(--muted);padding:7px 12px;font-size:10px;letter-spacing:0;line-height:1.5}
+.hero-motion-toggle:hover{border-color:var(--accent);color:var(--text)}
+html.hero-motion-paused .hero-tech-track,html.hero-motion-paused .keyword-band>div{animation-play-state:paused}
+html[lang=en] .hero-scene .hero h1{font-size:clamp(38px,4.7vw,66px)}
+html[data-theme=light] .hero-scene::before{background:radial-gradient(ellipse at 85% 25%,#92bc6040,transparent 55%),radial-gradient(ellipse at 70% 75%,#7db8b126,transparent 50%)}
+html[data-theme=light] .hero-tech-background{opacity:.4}
+html[data-theme=light] .hero-tech-tile{border-color:#42681f30;color:#42681f;background:#ffffff45}
+@keyframes hero-tech-scroll{to{transform:translateX(-50%)}}
+@media(max-width:760px){
+ .hero-scene .hero{padding-top:38px}
+ .hero-tech-background{opacity:.28;padding:20px 0 90px;mask-image:linear-gradient(to bottom,#000,#0008);-webkit-mask-image:linear-gradient(to bottom,#000,#0008)}
+ .hero-tech-tile{width:108px;height:104px;border-radius:16px;font-size:8px;gap:10px}
+ .hero-tech-icon{font-size:32px}.hero-tech-group{gap:18px;padding-right:18px}
+ .hero-scene .hero h1{font-size:clamp(27px,7vw,50px);line-height:1.35;margin:30px 0 28px}
+ html[lang=en] .hero-scene .hero h1{font-size:clamp(27px,6.8vw,46px)}
+ .hero-scene .hero-headline{font-size:20px;line-height:1.55}
+ .hero-scene .hero-aside{display:inline-flex;padding:0;border:0;background:none;backdrop-filter:none;margin-top:24px}
+ .hero-scene .hero-footer{flex-wrap:wrap;gap:16px;margin-top:35px}
+ .hero-motion-toggle{font-size:9px;padding:5px 9px}
+ .hero-scene .hero-footer>a{margin-left:auto}
+}
+@media(prefers-reduced-motion:reduce){.hero-tech-track{animation:none!important}.hero-motion-toggle{display:none}}
+@media print{.hero-tech-background,.hero-motion-toggle{display:none}}
+
+.hero-scene .button{text-shadow:none}

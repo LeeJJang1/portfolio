@@ -256,7 +256,15 @@
   "지연을 최소화하면서 AI 응답 내용에 맞는 음성과 캐릭터 입 모양을 함께 출력하는 것이 과제였습니다. 백엔드의 모델 실행 결과를 실제 앱의 반응으로 연결하는 프론트엔드 처리를 담당했습니다.": "The task was to present the matching voice and character lip movements with minimal delay. I handled the frontend processing that turned backend model output into app responses.",
   "백엔드 담당자가 공유한 로그를 바탕으로 응답·음성 청크의 흐름을 확인하고, 프론트에서 답변 표시와 입 모양 처리가 어떻게 이어지는지 함께 살폈습니다.": "Using logs shared by the backend developer, I traced responses and audio chunks and examined how they connected to reply display and lip movement handling on the frontend.",
   "프론트에서 응답과 음성 청크를 대응시켜 처리하고, 음성 재생과 캐릭터 입 모양을 연결했습니다.": "On the frontend, I matched responses with audio chunks and connected playback to character lip movements.",
-  "백엔드 로그와 프론트 처리 흐름을 함께 살피며, 모델 출력부터 사용자에게 보이는 응답까지 이어지는 연동 문제를 분석했습니다. 화면 전환과 연결 유지, 운영체제 권한 문제도 각각 분리해 처리했습니다.": "I analyzed integration issues from model output to user-facing responses by examining backend logs together with frontend processing. I also handled screen navigation, connection persistence and OS permission issues separately."
+  "백엔드 로그와 프론트 처리 흐름을 함께 살피며, 모델 출력부터 사용자에게 보이는 응답까지 이어지는 연동 문제를 분석했습니다. 화면 전환과 연결 유지, 운영체제 권한 문제도 각각 분리해 처리했습니다.": "I analyzed integration issues from model output to user-facing responses by examining backend logs together with frontend processing. I also handled screen navigation, connection persistence and OS permission issues separately.",
+  "화면을 만들고,": "I build interfaces,",
+  "실시간 반응을 연결합니다": "and connect live interactions",
+  "AI 방송 파트너 Live Buddy의": "Live Buddy, an AI streaming partner.",
+  "앱 화면부터 음성·캐릭터 연동, 배포까지.": "App UI, voice, character integration and releases.",
+  "React·TypeScript로 화면과 상태를 구현하고,": "I build interfaces and state with React and TypeScript,",
+  "음성·채팅 데이터를 캐릭터의 반응으로 연결한 개발자": "connecting voice and chat to character responses. I’m",
+  "배경 움직임 멈추기": "Pause background motion",
+  "배경 움직임 재생": "Resume background motion"
 };
   let language = 'ko';
   try { if (localStorage.getItem('portfolio-language') === 'en') language = 'en'; } catch { /* Use Korean when storage is unavailable. */ }
