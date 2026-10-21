@@ -261,6 +261,7 @@
   "실시간 반응을 연결합니다": "and connect live interactions",
   "AI 방송 파트너 Live Buddy의": "Live Buddy, an AI streaming partner.",
   "앱 화면부터 음성·캐릭터 연동, 배포까지.": "App UI, voice, character integration and releases.",
+  "로그로 오류의 원인을 추적하고, 코드 리팩토링으로 문제를 해결합니다.": "I trace errors through logs and resolve issues by refactoring code.",
   "React·TypeScript로 화면과 상태를 구현하고,": "I build interfaces and state with React and TypeScript,",
   "음성·채팅 데이터를 캐릭터의 반응으로 연결한 개발자": "connecting voice and chat to character responses. I’m",
   "배경 움직임 멈추기": "Pause background motion",
