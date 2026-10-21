@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111310">
+  <meta name="description" content="Live Buddy의 React 앱 화면, 음성·캐릭터 연동, OBS 오버레이와 데스크톱 앱 배포를 담당한 개발자 이정현의 포트폴리오.">
+  <title>이정현 — Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="i18n.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="이정현 포트폴리오 처음으로">이정현<span>.</span></a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#work">프로젝트</a><a href="#process">문제 해결</a><a href="#about">소개·역량</a><a href="#background">학력·수상</a><a href="#contact">연락</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-button" type="button" aria-label="라이트 모드로 변경" title="테마 변경"><span aria-hidden="true">☀</span></button>
+        <button class="language-toggle" type="button" role="switch" aria-checked="false" aria-label="한국어 사용 중. 영어로 전환"><span class="language-option" lang="ko" aria-hidden="true">KO</span><span class="language-option" lang="en" aria-hidden="true">EN</span></button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">메뉴 <span aria-hidden="true">＋</span></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="모바일 메뉴" hidden>
+      <a href="#work">프로젝트 <span>01</span></a><a href="#process">문제 해결 <span>02</span></a><a href="#about">소개·역량 <span>03</span></a><a href="#background">학력·수상 <span>04</span></a><a href="#contact">연락 <span>05</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-eyebrow"><span class="status-dot"></span> DEVELOPER <span class="hero-index">PORTFOLIO / 2026</span></div>
+      <h1 id="hero-title"><span>AI 방송 앱을</span><span class="outline-type">개발했습니다<span class="title-dot">.</span></span></h1>
+      <div class="hero-bottom">
+        <div class="hero-copy"><p class="hero-headline">화면 구현부터<br>음성·캐릭터 연동, 배포까지.</p><p class="hero-description">React·TypeScript·Electron으로 Live Buddy의 앱을 개발한<br>개발자 <strong>이정현</strong>입니다.</p><div class="hero-profile"><span>서경대학교 4학년 재학</span><span>2027.02 졸업 예정</span><span>SQLD</span></div></div>
+        <div class="hero-aside"><p class="small-label">FOCUS</p><p>React UI Development<br>Voice & Character Integration<br>Desktop App Packaging</p><a class="button primary" href="#work">프로젝트 살펴보기 <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="hero-footer"><span>REACT · TYPESCRIPT · ELECTRON</span><a href="#work" aria-label="아래 프로젝트로 이동">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="keyword-band" aria-hidden="true"><div>INTERFACE <span>✳</span> INTERACTION <span>✳</span> INTEGRATION <span>✳</span> ITERATION <span>✳</span> INTERFACE <span>✳</span> INTERACTION <span>✳</span> INTEGRATION <span>✳</span> ITERATION <span>✳</span></div></div>
+
+    <section class="section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED PROJECTS</p><h2 id="work-title">직접 개발한<br>두 가지 프로젝트.</h2></div><p class="section-description">AI 방송 앱과 개발 진로 추천 웹.<br>각 프로젝트에서 맡은 기능과 구현 내용을 정리했습니다.</p></div>
+      <article class="project-card">
+        <div class="project-art project-art-photo">
+          <div class="art-caption"><span><span class="status-dot"></span> LIVE BUDDY</span><span>APPLICATION SCREEN</span></div>
+          <button type="button" class="screenshot-button project-cover" data-lightbox data-caption="Live Buddy 대시보드 · AI 캐릭터와 실시간 방송 제어" aria-label="Live Buddy 실제 대시보드 이미지 확대"><img src="assets/live-buddy/dashboard.png" alt="Live Buddy의 실제 대시보드. AI 캐릭터, 대화 영역과 방송 제어 기능을 한 화면에 배치했습니다." width="1854" height="1124" decoding="async"><span class="image-expand" aria-hidden="true">실제 화면 크게 보기 ↗</span></button>
+          <div class="art-bottom"><span>VOICE ↔ CHAT ↔ CHARACTER</span><span>실제 앱 화면 · 방송 대시보드</span></div>
+        </div>
+        <div class="project-content"><div class="project-topline"><span class="tag">SILVER AWARD · 2026.06</span><span>01</span></div><h3>Live Buddy<span>↗</span></h3><p class="project-subtitle">음성·채팅에 반응하는 AI 캐릭터 방송 앱</p><p class="project-description">1인 스트리머를 위한 AI 방송 파트너입니다. 앱 화면, 음성·채팅 연동, 캐릭터 립싱크, OBS 오버레이와 설치 파일 패키징을 담당했습니다.</p><div class="project-facts"><div><span>PLATFORM</span><strong>macOS · Windows</strong></div><div><span>MY ROLE</span><strong>앱 개발 · 서비스 연동</strong></div></div><div class="tech-tags"><span>React</span><span>TypeScript</span><span>Electron</span><span>WebSocket</span><span>Three.js</span><span>OBS</span></div><button class="text-link" type="button" data-open-project>프로젝트 자세히 보기 <span aria-hidden="true">↗</span></button></div>
+      </article>
+      <div class="project-source-links"><span>EXPLORE THE PROJECT</span><a href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개 ↗</a><a href="https://github.com/SKU-SW/fe" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/SKU-SW/fe/releases" target="_blank" rel="noopener noreferrer">Desktop Releases ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=875-2" target="_blank" rel="noopener noreferrer">Figma ↗</a></div>
+      <aside class="delivery-summary" aria-labelledby="delivery-summary-title"><div class="delivery-summary-heading"><p class="eyebrow">LIVE BUDDY / BUILD & DELIVERY</p><h3 id="delivery-summary-title">macOS·Windows 설치 파일 배포</h3><p>앱과 음성 인식 프로그램을 묶어 배포하고, 소개 사이트 배포를 자동화했습니다.</p></div><ol><li><span>01</span><div><strong>버전 태그</strong><small>v* → GitHub Actions</small></div></li><li><span>02</span><div><strong>앱·STT 패키징</strong><small>Electron + PyInstaller</small></div></li><li><span>03</span><div><strong>DMG · EXE 배포</strong><small>GitHub Releases</small></div></li></ol><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/.github/workflows/release-desktop.yml" target="_blank" rel="noopener noreferrer">배포 파이프라인 보기 ↗</a></aside>
+      <article class="subproject-card" id="career-recommender" aria-labelledby="career-title">
+        <div class="subproject-heading"><p class="eyebrow">02 / SUB PROJECT</p><span class="subproject-status">WEB · DATA</span></div>
+        <div class="subproject-layout">
+          <div class="subproject-copy"><h3 id="career-title">개발 진로 추천 웹</h3><p class="subproject-subtitle">설문 결과로 직무·교과목·채용공고를 추천합니다.</p><p class="subproject-description">12개 설문 응답을 바탕으로 개발 성향을 분석하고, 관련 직무와 학년별 교과목, 채용공고를 함께 보여주는 웹 프로젝트입니다.</p><div class="tech-tags"><span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>JavaScript</span><span>TF-IDF</span><span>KMeans</span></div></div>
+          <div class="recommendation-flow" aria-label="추천 흐름: 12문항 설문, 4가지 성향 분석, 직무·교과목·채용공고 추천"><p class="small-label">RECOMMENDATION FLOW</p><ol><li><span>01</span><div><strong>12문항 설문</strong><small>관심사와 개발 성향 입력</small></div></li><li><span>02</span><div><strong>4가지 성향 분석</strong><small>논리 · 창의 · 분석 · 안정</small></div></li><li><span>03</span><div><strong>개발 진로 탐색</strong><small>직무 · 교과목 · 채용공고</small></div></li></ol></div>
+        </div>
+        <details class="subproject-details"><summary>구현 내용 보기 <span aria-hidden="true">＋</span></summary><div class="subproject-detail-grid"><div><h4>설문과 결과 화면</h4><p>응답 저장과 진행률 표시를 구현하고, 성향 차트와 추천 결과를 화면에 표시합니다.</p></div><div><h4>데이터 기반 추천</h4><p>직무 설명을 TF-IDF로 벡터화하고 KMeans로 군집화합니다. 설문 성향과 군집의 코사인 유사도로 개발 트랙을 추천합니다.</p></div><div><h4>추천 API 연동</h4><p>FastAPI로 트랙 추천과 채용공고 검색 API를 제공하고, 웹 화면에서 결과를 받아 표시합니다.</p></div></div></details>
+        <div class="subproject-footer"><span>로컬 실행 프로젝트</span><a class="subtle-link" href="https://github.com/LeeJJang1/developer-career-recommender" target="_blank" rel="noopener noreferrer">GitHub · 비공개 저장소 ↗</a></div>
+      </article>
+    </section>
+
+    <section class="process-section" id="process" aria-labelledby="process-title"><div class="container section">
+      <div class="section-heading"><div><p class="eyebrow">02 / PROBLEM SOLVING</p><h2 id="process-title">개발 중 발생한 문제와<br>제가 적용한 해결 방법.</h2></div><p class="section-description">응답·음성·입 모양의 타이밍, 화면 전환 시 연결 종료, 단축키 오류.<br>원인을 확인하고 코드를 수정한 세 가지 사례입니다.</p></div>
+      <div class="case-list">
+        <article class="case-row"><span class="case-number">01</span><div><span class="case-category">LOG ANALYSIS & REAL-TIME SYNC</span><h3>AI 응답·음성·입 모양을,<br class="mobile-break"> 로그를 비교하며 맞췄습니다.</h3><p><strong>문제</strong> 백엔드의 AI 응답과 음성 결과를 프론트에서 대응시키고, 답변 표시·음성 재생·캐릭터 입 모양의 타이밍을 맞추는 작업이 어려웠습니다.</p><p><strong>분석</strong> 백엔드에서 전달받은 로그와 프론트의 처리 흐름을 함께 확인하며, 응답과 음성 청크가 화면과 캐릭터 반응으로 이어지는 과정을 분석했습니다.</p><p><strong>해결</strong> 분석한 내용을 바탕으로 프론트에서 답변을 표시하고, 음성 청크 재생과 입 모양 처리를 연결했습니다. Web Audio의 재생 시점 예약을 적용해 청크 사이의 공백을 줄였습니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/broadcastWSBackgroundService.ts" target="_blank" rel="noopener noreferrer">TTS 스케줄링 코드 ↗</a></div><span class="case-icon" aria-hidden="true">≋</span></article>
+        <article class="case-row"><span class="case-number">02</span><div><span class="case-category">SERVICE LIFECYCLE</span><h3>화면을 이동해도<br class="mobile-break"> WS·STT 연결을 유지합니다.</h3><p><strong>문제</strong> 페이지 이동으로 컴포넌트가 해제되면 WS·STT 연결도 종료됐습니다.</p><p><strong>해결</strong> 핵심 로직을 전역 상주 서비스로 분리하고, 화면은 얇은 훅으로 상태를 읽도록 구성했습니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/broadcastWSBackgroundService.ts" target="_blank" rel="noopener noreferrer">전역 상주 서비스 코드 ↗</a></div><span class="case-icon" aria-hidden="true">↔</span></article>
+        <article class="case-row"><span class="case-number">03</span><div><span class="case-category">INPUT & PERMISSIONS</span><h3>음성 단축키 오류에<br class="mobile-break"> 앱 내부 입력을 추가했습니다.</h3><p><strong>문제</strong> macOS 권한 무효화로 전역 음성 단축키가 반응하지 않았습니다.</p><p><strong>해결</strong> 앱 내부 키 이벤트를 대체 경로로 제공하고, 타이핑 중 오작동과 포커스 이탈도 고려했습니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/features/stt/hooks/useInAppPtt.ts" target="_blank" rel="noopener noreferrer">PTT 입력 처리 코드 ↗</a></div><span class="case-icon" aria-hidden="true">⌘</span></article>
+      </div>
+    </div></section>
+
+    <section class="section container about-section" id="about" aria-labelledby="about-title"><div class="about-intro"><p class="eyebrow">03 / ABOUT ME</p><h2 id="about-title">제가 구현한 기능과<br>사용한 기술<span class="accent">.</span></h2><p>이정현 <span>Developer</span></p><div class="about-description">Live Buddy에서 React 화면과 상태 관리, 음성·채팅 API 연동, 캐릭터 립싱크, OBS 오버레이, 데스크톱 설치 파일 패키징을 담당했습니다. AI를 개발 보조 도구로 활용했으며, 백엔드·AI 담당 팀원과 협업해 앱의 입력과 응답을 연결했습니다.</div><a class="subtle-link" href="https://github.com/LeeJJang1" target="_blank" rel="noopener noreferrer">GitHub에서 작업 살펴보기 ↗</a></div>
+      <div class="capabilities"><article><span class="capability-index">A</span><div><h3>화면 개발</h3><p>React 화면 구현 · 상태 관리</p><div class="tech-tags"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Zustand</span></div></div></article><article><span class="capability-index">B</span><div><h3>실시간 연동</h3><p>음성 재생 · 캐릭터 립싱크 · API 연동</p><div class="tech-tags"><span>WebSocket</span><span>Web Audio</span><span>Three.js</span><span>VRM</span></div></div></article><article><span class="capability-index">C</span><div><h3>앱 배포</h3><p>데스크톱 앱 패키징 · 배포 자동화</p><div class="tech-tags"><span>Electron</span><span>Vite</span><span>GitHub Actions</span><span>Git</span></div></div></article></div>
+    </section>
+
+    <section class="background-section" id="background" aria-labelledby="background-title"><div class="container section">
+      <div class="section-heading"><div><p class="eyebrow">04 / BACKGROUND</p><h2 id="background-title">학력·자격증과<br>프로젝트 수상 내역.</h2></div><p class="section-description">서경대학교 소프트웨어학과 재학,<br>SQLD 취득, Live Buddy 프로젝트 은상 수상.</p></div>
+      <article class="award-card" aria-labelledby="award-title">
+        <div class="award-mark"><span class="award-mark-label">PROJECT ACHIEVEMENT</span><span class="silver-symbol" aria-hidden="true">✳</span><strong>SILVER</strong><span class="award-rank">AWARD · 2등</span></div>
+        <div class="award-content"><p class="eyebrow">2026.06 / 산학협력 프로젝트 수상</p><h3 id="award-title">헥토 주관 프로젝트 성과발표회<br><span>Silver Award · 은상</span></h3><p class="award-description">2026년 6월, 앱 개발과 음성·캐릭터 연동을 맡은 Live Buddy로 헥토 주관 프로젝트 성과발표회 은상(Silver Award · 2등)을 수상했습니다.</p>
+          <dl class="program-context"><div><dt>사업 배경</dt><dd>과학기술정보통신부·정보통신기획평가원(IITP) 주관<br>SW 전문인재 양성사업</dd></div><div><dt>교육·기업 연계</dt><dd>서경 SW아카데미 · 헥토</dd></div></dl>
+          <a class="subtle-link" href="https://swacademy.skuniv.ac.kr/company/#!/participation" target="_blank" rel="noopener noreferrer">SW아카데미 참여기업 안내 ↗</a>
+        </div>
+      </article>
+      <div class="background-grid">
+        <article class="background-card"><div class="background-card-top"><span class="eyebrow">EDUCATION</span><span class="background-status">4학년 재학</span></div><h3>서경대학교</h3><p class="background-major">소프트웨어학과</p><div class="background-card-bottom"><span>졸업 예정</span><strong>2027.02</strong></div></article>
+        <article class="background-card"><div class="background-card-top"><span class="eyebrow">CERTIFICATION</span><span class="background-status">취득</span></div><h3>SQLD</h3><p class="background-major">SQL 개발자</p><div class="background-card-bottom"><span>취득</span><strong>2026.03</strong></div></article>
+      </div>
+    </div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><p class="eyebrow">05 / SOURCE CODE</p><div class="contact-heading"><h2 id="contact-title">프로젝트 코드는<br>GitHub에서 확인하세요<span>.</span></h2><a class="contact-arrow" href="https://github.com/LeeJJang1" target="_blank" rel="noopener noreferrer" aria-label="이정현 GitHub 프로필 열기">↗</a></div><div class="contact-links"><a href="https://github.com/LeeJJang1" target="_blank" rel="noopener noreferrer">GitHub · LeeJJang1 ↗</a><button type="button" id="copy-profile">프로필 링크 복사 <span aria-hidden="true">＋</span></button></div></div></section>
+  </main>
+  <footer class="site-footer container"><span>© 2026 이정현</span><span>BUILT WITH CARE.</span><a href="#home">맨 위로 ↑</a></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-bar"><span>PROJECT / 01</span><button class="dialog-close" type="button" aria-label="프로젝트 상세 닫기">닫기 <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-body">
+      <p class="eyebrow">LIVE BUDDY · APPLICATION DEVELOPMENT</p>
+      <h2 id="dialog-title">Live Buddy에서 맡은<br>앱 개발과 서비스 연동.</h2>
+      <p class="dialog-lead">음성·캐릭터 연동과 OBS 송출, 설치 파일 배포를 담당했습니다.</p>
+      <p class="dialog-award">2026.06 · 헥토 주관 프로젝트 성과발표회 Silver Award (은상 · 2등)</p>
+      <div class="detail-meta"><div><small>PROJECT</small><strong>Live Buddy · 2인 팀</strong></div><div><small>MY ROLE</small><strong>앱 개발 · 연동 · 패키징</strong></div><div><small>PLATFORM</small><strong>macOS · Windows</strong></div></div>
+
+      <section aria-labelledby="service-overview-title">
+        <p class="detail-kicker">01 / SERVICE OVERVIEW</p><h3 id="service-overview-title">음성·채팅에 AI 캐릭터가 반응하는 방송 앱</h3>
+        <p>게임을 진행하며 채팅을 확인하고 반응까지 이어가야 하는 1인 스트리머를 위한 데스크톱 콘솔입니다. 스트리머의 음성과 시청자 채팅을 바탕으로 AI 캐릭터가 반응하고, OBS 오버레이를 통해 방송 화면에 함께 등장합니다.</p>
+        <div class="service-summary-grid"><article><h4>대상 사용자</h4><p>1인 방송인과 방송 입문자, 캐릭터를 활용하는 버추얼 방송인.</p></article><article><h4>서비스의 역할</h4><p>대화 보조와 채팅 분석, 캐릭터 설정과 송출 관리를 하나의 흐름으로 연결.</p></article></div>
+        <div class="service-scope"><span>AI 페르소나 설정</span><span>실시간 대화·채팅 분석</span><span>2D·3D 캐릭터</span><span>OBS 오버레이</span><span>방송 통계·안전 관리</span></div>
+        <a class="subtle-link" href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개와 캐릭터 미리보기 ↗</a>
+      </section>
+
+      <section class="product-gallery" aria-labelledby="gallery-title">
+        <p class="detail-kicker">PRODUCT SCREENS / 실제 구현 화면</p>
+        <h3 id="gallery-title">직접 구현한 앱 화면과 방송 연동 화면</h3>
+        <p>대시보드와 캐릭터 설정, 채팅 분석을 거쳐 방송 화면으로 이어지는 모습을 담았습니다. 이미지를 누르면 크게 볼 수 있습니다.</p>
+        <div class="screen-gallery-grid">
+          <figure class="screen-figure screen-wide"><button type="button" class="screenshot-button" data-lightbox data-caption="Live Buddy 대시보드 · AI 캐릭터와 실시간 대화, 방송 제어" aria-label="Live Buddy 대시보드 이미지 확대"><img src="assets/live-buddy/dashboard.png" alt="Live Buddy 대시보드. 왼쪽 AI 캐릭터와 오른쪽 대화 영역, 마이크·스피커 제어와 하단 방송 지표를 함께 표시합니다." width="1854" height="1124" loading="lazy" decoding="async"><span class="image-expand" aria-hidden="true">크게 보기 ↗</span></button><figcaption><strong>01 / 방송 대시보드</strong><span>캐릭터, 대화, 방송 제어를 한 화면에서 확인합니다.</span></figcaption></figure>
+          <figure class="screen-figure"><button type="button" class="screenshot-button" data-lightbox data-caption="Live Buddy 캐릭터 설정 · 2D·3D 외형과 페르소나 선택" aria-label="캐릭터 설정 이미지 확대"><img src="assets/live-buddy/character-settings.png" alt="캐릭터 설정 화면. 2D·3D 외형 선택, VRM 프리셋과 페르소나 옵션을 제공합니다." width="3644" height="2210" loading="lazy" decoding="async"><span class="image-expand" aria-hidden="true">크게 보기 ↗</span></button><figcaption><strong>02 / 캐릭터 설정</strong><span>외형과 페르소나를 선택하는 인터페이스입니다.</span></figcaption></figure>
+          <figure class="screen-figure"><button type="button" class="screenshot-button" data-lightbox data-caption="Live Buddy 채팅 분석 · 감정 흐름과 AI 반응 성향, 실시간 키워드" aria-label="채팅 분석 이미지 확대"><img src="assets/live-buddy/chat-analysis.png" alt="채팅 분석 화면. 긍정·중립·부정 분포, AI 반응 성향, 감정 흐름 그래프와 주요 키워드를 표시합니다." width="3644" height="2210" loading="lazy" decoding="async"><span class="image-expand" aria-hidden="true">크게 보기 ↗</span></button><figcaption><strong>03 / 채팅 분석</strong><span>실시간 분석 결과를 그래프와 키워드로 시각화합니다.</span></figcaption></figure>
+          <figure class="screen-figure screen-wide"><button type="button" class="screenshot-button" data-lightbox data-caption="치지직 스튜디오 · Live Buddy 캐릭터 오버레이 송출 연동 확인" aria-label="치지직 송출 연동 확인 이미지 확대"><img src="assets/live-buddy/chzzk-broadcast.png" alt="치지직 스튜디오에서 확인한 방송 화면. 송출된 화면 우측 하단에 Live Buddy 캐릭터가 표시되어 있습니다." width="3260" height="2016" loading="lazy" decoding="async"><span class="image-expand" aria-hidden="true">크게 보기 ↗</span></button><figcaption><strong>04 / 실제 송출 연동 확인</strong><span>외부 플랫폼인 치지직 스튜디오에서 캐릭터 오버레이가 송출된 모습입니다.</span></figcaption></figure>
+        </div>
+        <p class="gallery-source">대시보드·송출 화면은 직접 제공한 캡처이며, 캐릭터 설정·채팅 분석은 Figma 발표 자료의 원본 이미지입니다. 화면 속 수치는 캡처 시점의 표시 값입니다.</p>
+      </section>
+
+      <section aria-labelledby="responsibility-title">
+        <p class="detail-kicker">02 / MY RESPONSIBILITY</p><h3 id="responsibility-title">담당 범위</h3>
+        <div class="responsibility-block"><span class="responsibility-label">APP DEVELOPMENT / 이정현</span><p>Electron·React 기반 데스크톱 UI, 방송 대시보드, 캐릭터 설정, 통계·채팅 분석 화면을 구현했습니다. 전역 상주 서비스와 로컬 음성 인식, 음성 재생·립싱크, OBS 오버레이 연동 및 macOS·Windows 앱 패키징을 담당했습니다.</p></div>
+        <p class="team-context"><strong>팀 협업</strong> Spring Boot API, Gemini Live 연동, FastAPI 채팅 수집, Redis와 AWS 서버 인프라는 백엔드·AI 담당 팀원의 영역입니다. 해당 API·이벤트를 받아 사용자가 조작할 수 있는 화면과 동작으로 연결했습니다.</p>
+      </section>
+
+      <section aria-labelledby="implementation-title">
+        <p class="detail-kicker">03 / CORE IMPLEMENTATION</p><h3 id="implementation-title">주요 구현 기능</h3>
+        <p>핵심은 화면 전환과 방송의 생명주기를 분리하고, 입력·응답·출력을 이어주는 것이었습니다.</p>
+        <div class="runtime-map" aria-label="앱 구조 요약"><div><small>VIEW</small><strong>React 화면</strong><span>대시보드 · 캐릭터 · 통계</span></div><b aria-hidden="true">↕</b><div><small>BRIDGE</small><strong>얇은 훅 + Zustand</strong><span>상태 구독 · UI 동기화</span></div><b aria-hidden="true">↕</b><div><small>RUNTIME</small><strong>전역 상주 서비스</strong><span>WebSocket · STT · TTS</span></div></div>
+        <div class="implementation-list">
+          <details class="implementation-item" open><summary><span class="implementation-no">01</span><span>화면 이동에도 유지되는 방송 연결</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>WS·STT·TTS 핵심 로직을 React 컴포넌트 밖의 싱글턴 서비스로 분리했습니다. 컴포넌트는 <code>useStreamWS</code>, <code>useSTT</code> 같은 얇은 훅으로 상태를 읽고, Zustand로 UI와 방송 상태를 동기화합니다. <code>setBroadcast</code>·<code>clearBroadcast</code>로 세션 상태를 한 번에 설정·정리합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/broadcastWSBackgroundService.ts" target="_blank" rel="noopener noreferrer">방송 백그라운드 서비스 ↗</a></div></details>
+          <details class="implementation-item"><summary><span class="implementation-no">02</span><span>로컬 음성 인식과 Push-to-Talk</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>MediaRecorder가 녹음한 음성을 Electron IPC로 전달하고, 로컬 Faster Whisper에서 텍스트로 변환한 뒤 방송 WebSocket으로 전송합니다. Python 데몬을 상주시켜 모델을 매번 불러오지 않도록 했습니다. 전역 PTT와 앱 내부 PTT를 지원하며, 사용자가 발화를 시작하면 AI 응답을 중단하는 Barge-in 흐름을 연결했습니다.</p><div class="inline-pipeline"><span>PTT 녹음</span><b>→</b><span>Electron IPC</span><b>→</b><span>로컬 STT</span><b>→</b><span>텍스트 송신</span></div><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/sttBackgroundService.ts" target="_blank" rel="noopener noreferrer">STT 백그라운드 서비스 ↗</a></div></details>
+          <details class="implementation-item"><summary><span class="implementation-no">03</span><span>음성 바이너리와 이벤트를 잇는 WebSocket</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>오디오 Blob은 큐에 보관하고 JSON은 이벤트 유형별로 분기해 <code>VOICE_CHUNK</code> 단위로 짝지어 처리합니다. 중단된 대화 턴의 후속 청크는 버려 이전 응답이 다시 재생되지 않게 합니다. 토큰·방송 ID 변화를 구독하고, 종료 원인에 따라 재연결 여부를 구분합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/broadcastWSBackgroundService.ts" target="_blank" rel="noopener noreferrer">WebSocket·인터럽트 처리 ↗</a></div></details>
+          <details class="implementation-item"><summary><span class="implementation-no">04</span><span>TTS 청크 스케줄링과 오디오 기반 립싱크</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>Web Audio의 시간축에서 <code>ttsNextStartTime</code>을 기준으로 음성 청크의 시작 시점을 예약해 청크 사이의 공백을 줄였습니다. 컨테이너 디코딩이 실패하면 16bit PCM으로 직접 변환합니다. AnalyserNode로 오디오를 분석해 mouthOpen·viseme 값을 만들고 VRM·2D 캐릭터의 입 모양에 반영합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/shared/lib/vrmController.ts" target="_blank" rel="noopener noreferrer">VRM 표정·입 모양 처리 ↗</a></div></details>
+          <details class="implementation-item"><summary><span class="implementation-no">05</span><span>OBS 투명 오버레이 자동 설정과 상태 동기화</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>obs-websocket v5 프로토콜을 구현해 OBS 인증과 브라우저 소스 생성을 자동화했습니다. 앱과 오버레이 사이의 상태는 localStorage·IPC·로컬 HTTP 브리지로 공유합니다. 로컬 상태를 주기적으로 읽어 캐릭터와 대화를 반영하고, 누락된 필드는 기본값으로 보정해 렌더링을 보호합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/electron/obsManager.ts" target="_blank" rel="noopener noreferrer">OBS 연결·브라우저 소스 설정 ↗</a></div></details>
+        </div>
+      </section>
+
+      <section aria-labelledby="deployment-title">
+        <p class="detail-kicker">04 / BUILD & DELIVERY</p><h3 id="deployment-title">Electron 앱과 STT 프로그램을 묶어 배포했습니다.</h3>
+        <ol class="deployment-steps"><li><span class="step-number">01</span><div><h4>버전 태그로 빌드 실행</h4><p><code>v*</code> 태그를 GitHub에 올리면 GitHub Actions가 macOS·Windows 환경에서 빌드를 실행합니다.</p></div></li><li><span class="step-number">02</span><div><h4>앱과 음성 인식 프로그램 패키징</h4><p>React·TypeScript 앱을 빌드하고, 로컬 STT 데몬은 PyInstaller 사이드카로 번들합니다. Electron 앱에 모델과 실행 파일을 포함해 별도 Python 환경을 준비하는 부담을 줄였습니다.</p></div></li><li><span class="step-number">03</span><div><h4>DMG·EXE와 다운로드 페이지 제공</h4><p>macOS용 DMG와 Windows용 EXE를 GitHub Releases로 배포합니다. 소개 사이트는 <code>landing/</code> 변경 시 GitHub Pages로 자동 배포되고, 설치 파일로 연결됩니다.</p></div></li></ol>
+        <div class="detail-resource-links"><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/.github/workflows/release-desktop.yml" target="_blank" rel="noopener noreferrer">데스크톱 빌드 자동화 ↗</a><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/.github/workflows/pages.yml" target="_blank" rel="noopener noreferrer">소개 사이트 배포 ↗</a></div>
+        <div class="context-note"><strong>서비스 전체 배포 환경 · 팀 협업</strong><p>백엔드·AI 서버는 Docker 이미지로 빌드해 AWS EC2에 배포하고, Nginx가 HTTPS와 요청 중계를 담당합니다. Spring Boot·FastAPI·Redis, MySQL·S3·CloudFront가 연계된 환경이며, 서버 인프라 구축은 백엔드·AI 담당 팀원의 기여입니다.</p></div>
+      </section>
+
+      <section aria-labelledby="challenge-title">
+        <p class="detail-kicker">05 / CHALLENGES & SOLUTIONS</p><h3 id="challenge-title">음성·연결·입력 오류의 원인과 수정 내용</h3>
+        <div class="challenge-cards"><article><h4>백엔드 로그를 활용한 AI 응답·음성·립싱크 연동</h4><dl><div><dt>문제</dt><dd>지연을 최소화하면서 AI 응답 내용에 맞는 음성과 캐릭터 입 모양을 함께 출력하는 것이 과제였습니다. 백엔드의 모델 실행 결과를 실제 앱의 반응으로 연결하는 프론트엔드 처리를 담당했습니다.</dd></div><div><dt>분석</dt><dd>백엔드 담당자가 공유한 로그를 바탕으로 응답·음성 청크의 흐름을 확인하고, 프론트에서 답변 표시와 입 모양 처리가 어떻게 이어지는지 함께 살폈습니다.</dd></div><div><dt>해결</dt><dd>프론트에서 응답과 음성 청크를 대응시켜 처리하고, 음성 재생과 캐릭터 입 모양을 연결했습니다.</dd></div></dl></article><article><h4>페이지를 바꾸면 종료되던 방송 연결</h4><dl><div><dt>문제</dt><dd>화면 컴포넌트가 해제되면서 WS·STT 연결까지 함께 정리됐습니다.</dd></div><div><dt>해결</dt><dd>핵심 로직을 전역 상주 서비스로 옮기고, 훅은 상태를 읽는 역할로 줄여 화면과 방송의 생명주기를 분리했습니다.</dd></div></dl></article><article><h4>macOS에서 반응하지 않던 음성 단축키</h4><dl><div><dt>문제</dt><dd>미서명 배포본의 권한 무효화로 전역 단축키가 입력을 받지 못하는 상황이 있었습니다.</dd></div><div><dt>해결</dt><dd>앱에 포커스가 있을 때 DOM 키 이벤트로 동작하는 PTT 대체 경로를 마련했습니다. 타이핑 중 오작동과 포커스 이탈도 처리했습니다.</dd></div></dl></article></div>
+        <p class="detail-learning">백엔드 로그와 프론트 처리 흐름을 함께 살피며, 모델 출력부터 사용자에게 보이는 응답까지 이어지는 연동 문제를 분석했습니다. 화면 전환과 연결 유지, 운영체제 권한 문제도 각각 분리해 처리했습니다.</p>
+      </section>
+
+      <section aria-labelledby="next-step-title"><p class="detail-kicker">06 / NEXT STEPS</p><h3 id="next-step-title">구현한 범위와 다음 단계</h3><p>치지직 연동을 기반으로 서비스를 구현했으며, SOOP·YouTube 채팅 연동 확대와 캐릭터 라인업 확장은 향후 계획입니다. AI를 개발에 활용했고, 발표 자료의 기대 효과와 실제 측정된 성과는 구분합니다. 서비스 소개 사이트의 시청자 수·감정 비율은 화면 예시이므로 운영 성과로 사용하지 않았습니다.</p></section>
+
+      <div class="dialog-links"><a class="button primary" href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개 사이트 ↗</a><a class="button secondary" href="https://github.com/SKU-SW/fe" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button secondary" href="https://github.com/SKU-SW/fe/releases" target="_blank" rel="noopener noreferrer">배포 파일 ↗</a></div>
+      <div class="detail-source-note"><span>관련 자료</span><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=952-22" target="_blank" rel="noopener noreferrer">핵심 구현 발표 자료 ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=983-2" target="_blank" rel="noopener noreferrer">배포 발표 자료 ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=986-41" target="_blank" rel="noopener noreferrer">문제 해결 발표 자료 ↗</a></div>
+    </div>
+  </dialog>
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-title">
+    <div class="image-dialog-bar"><h2 id="image-title">프로젝트 화면</h2><div class="image-dialog-actions"><button type="button" class="image-zoom-toggle" aria-pressed="false">원본 크기</button><button type="button" class="image-dialog-close" aria-label="확대 이미지 닫기">닫기 <span aria-hidden="true">×</span></button></div></div>
+    <div class="image-viewport" tabindex="0" aria-label="확대 이미지. 원본 크기로 전환하면 스크롤하여 자세히 볼 수 있습니다."><img id="expanded-image" alt=""></div>
+    <p class="image-viewer-hint">원본 크기로 자세히 보기 · Esc로 닫기</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

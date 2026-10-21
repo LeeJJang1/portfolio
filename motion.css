@@ -1,0 +1,97 @@
+/* Motion complements the existing typography and accent colour. */
+:root {
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+@keyframes portfolio-enter {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-eyebrow { animation: portfolio-enter .65s var(--motion-ease) both; }
+  .hero h1 > span { animation: portfolio-enter .95s var(--motion-ease) .08s both; }
+  .hero h1 > span:nth-child(2) { animation-delay: .18s; }
+  .hero-bottom { animation: portfolio-enter .8s var(--motion-ease) .28s both; }
+  .hero-footer { animation: portfolio-enter .7s var(--motion-ease) .36s both; }
+  .mobile-nav:not([hidden]) { animation: portfolio-enter .24s var(--motion-ease); }
+}
+
+.desktop-nav a { position: relative; transition: color .2s; }
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -8px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s var(--motion-ease);
+}
+.desktop-nav a:is(:hover, :focus-visible, .active)::after { transform: scaleX(1); }
+.button, .theme-button, .contact-arrow {
+  transition: transform .3s var(--motion-ease), background-color .25s, border-color .25s, color .25s, box-shadow .3s;
+}
+.button:active, .theme-button:active { transform: scale(.97); }
+.button > span, .text-link > span, .hero-footer a > span {
+  display: inline-block;
+  transition: transform .3s var(--motion-ease);
+}
+.button:is(:hover, :focus-visible) > span { transform: translate(3px, 3px); }
+.text-link:is(:hover, :focus-visible) > span { transform: translate(3px, -3px); }
+.hero-footer a:is(:hover, :focus-visible) > span { transform: translateY(4px); }
+.project-card, .subproject-card { transition: border-color .3s, box-shadow .35s; }
+.screenshot-button { overflow: hidden; }
+.screenshot-button img { transition: transform .65s var(--motion-ease), filter .3s; }
+.case-icon { transition: transform .45s var(--motion-ease), color .3s; }
+.subtle-link, .project-source-links a { transition: color .2s; }
+.subtle-link:is(:hover, :focus-visible), .project-source-links a:is(:hover, :focus-visible) { color: var(--accent); }
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover, .subproject-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 16px 40px #00000012;
+  }
+  .screenshot-button:hover img { transform: scale(1.015); }
+  .case-row:hover .case-icon { transform: translateX(5px); color: var(--accent); }
+  .theme-button:hover { transform: rotate(12deg); }
+  .contact-arrow:hover { transform: translate(3px, -3px); }
+  .keyword-band:hover > div { animation-play-state: paused; }
+}
+
+/* Native dialogs retain their focus handling and Escape/backdrop behaviour. */
+@media (prefers-reduced-motion: no-preference) {
+  .project-dialog, .image-dialog {
+    opacity: 0;
+    transform: translateY(14px) scale(.985);
+    transition: opacity .22s ease, transform .3s var(--motion-ease),
+      display .3s allow-discrete, overlay .3s allow-discrete;
+  }
+  .project-dialog[open], .image-dialog[open] { opacity: 1; transform: none; }
+  .project-dialog::backdrop, .image-dialog::backdrop {
+    opacity: 0;
+    transition: opacity .25s ease, display .3s allow-discrete, overlay .3s allow-discrete;
+  }
+  .project-dialog[open]::backdrop, .image-dialog[open]::backdrop { opacity: 1; }
+  @starting-style {
+    .project-dialog[open], .image-dialog[open] { opacity: 0; transform: translateY(14px) scale(.985); }
+    .project-dialog[open]::backdrop, .image-dialog[open]::backdrop { opacity: 0; }
+  }
+  @supports (interpolate-size: allow-keywords) {
+    .implementation-item, .subproject-details { interpolate-size: allow-keywords; }
+    .implementation-item::details-content, .subproject-details::details-content {
+      block-size: 0;
+      opacity: 0;
+      overflow: clip;
+      transition: block-size .35s var(--motion-ease), opacity .25s, content-visibility .35s allow-discrete;
+    }
+    .implementation-item[open]::details-content, .subproject-details[open]::details-content {
+      block-size: auto;
+      opacity: 1;
+    }
+  }
+}
+
+@media print {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
