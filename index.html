@@ -9,11 +9,11 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-  <link rel="stylesheet" href="style.css?v=feature-clips-1">
+  <link rel="stylesheet" href="style.css?v=notion-enriched-1">
   <link rel="stylesheet" href="motion.css">
   <link rel="stylesheet" href="hero.css">
-  <script src="i18n.js?v=feature-clips-1" defer></script>
-  <script src="script.js?v=feature-clips-1" defer></script>
+  <script src="i18n.js?v=notion-enriched-1" defer></script>
+  <script src="script.js?v=notion-enriched-1" defer></script>
   <script src="motion.js" defer></script>
   <script src="hero.js" defer></script>
 </head>
@@ -60,7 +60,7 @@
           <button type="button" class="screenshot-button project-cover" data-lightbox data-caption="Live Buddy 대시보드 · AI 캐릭터와 실시간 방송 제어" aria-label="Live Buddy 실제 대시보드 이미지 확대"><img src="assets/live-buddy/dashboard.png" alt="Live Buddy의 실제 대시보드. AI 캐릭터, 대화 영역과 방송 제어 기능을 한 화면에 배치했습니다." width="1854" height="1124" decoding="async"><span class="image-expand" aria-hidden="true">실제 화면 크게 보기 ↗</span></button>
           <div class="art-bottom"><span>VOICE ↔ CHAT ↔ CHARACTER</span><span>실제 앱 화면 · 방송 대시보드</span></div>
         </div>
-        <div class="project-content"><div class="project-topline"><span class="tag">SILVER AWARD · 2026.06</span><span>01</span></div><h3>Live Buddy<span>↗</span></h3><p class="project-subtitle">음성·채팅에 반응하는 AI 캐릭터 방송 앱</p><p class="project-description">1인 스트리머를 위한 AI 방송 파트너입니다. 앱 화면, 음성·채팅 연동, 캐릭터 립싱크, OBS 오버레이와 설치 파일 패키징을 담당했습니다.</p><div class="project-facts"><div><span>PLATFORM</span><strong>macOS · Windows</strong></div><div><span>MY ROLE</span><strong>앱 개발 · 서비스 연동</strong></div></div><div class="tech-tags"><span>React</span><span>TypeScript</span><span>Electron</span><span>WebSocket</span><span>Three.js</span><span>OBS</span></div><button class="text-link" type="button" data-open-project>프로젝트 자세히 보기 <span aria-hidden="true">↗</span></button></div>
+        <div class="project-content"><div class="project-topline"><span class="tag">SILVER AWARD · 2026.06</span><span>01</span></div><h3>Live Buddy<span>↗</span></h3><p class="project-subtitle">음성·채팅에 반응하는 AI 캐릭터 방송 앱</p><p class="project-description">혼자 방송하는 스트리머가 AI 동료와 대화하고, 시청자와 함께 반응을 나누는 데스크톱 앱입니다. 화면 구현부터 음성·캐릭터 연동, OBS 송출과 설치 파일 패키징까지 담당했습니다.</p><div class="project-facts"><div><span>PLATFORM</span><strong>macOS · Windows</strong></div><div><span>MY ROLE</span><strong>앱 개발 · 서비스 연동</strong></div></div><div class="tech-tags"><span>React</span><span>TypeScript</span><span>Electron</span><span>WebSocket</span><span>Three.js</span><span>OBS</span></div><button class="text-link" type="button" data-open-project>프로젝트 자세히 보기 <span aria-hidden="true">↗</span></button></div>
       </article>
       <div class="project-source-links"><span>EXPLORE THE PROJECT</span><a href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개 ↗</a><a href="https://github.com/SKU-SW/fe" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/SKU-SW/fe/releases" target="_blank" rel="noopener noreferrer">Desktop Releases ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=875-2" target="_blank" rel="noopener noreferrer">Figma ↗</a></div>
       <aside class="delivery-summary" aria-labelledby="delivery-summary-title"><div class="delivery-summary-heading"><p class="eyebrow">LIVE BUDDY / BUILD & DELIVERY</p><h3 id="delivery-summary-title">macOS·Windows 설치 파일 배포</h3><p>앱과 음성 인식 프로그램을 묶어 배포하고, 소개 사이트 배포를 자동화했습니다.</p></div><ol><li><span>01</span><div><strong>버전 태그</strong><small>v* → GitHub Actions</small></div></li><li><span>02</span><div><strong>앱·STT 패키징</strong><small>Electron + PyInstaller</small></div></li><li><span>03</span><div><strong>DMG · EXE 배포</strong><small>GitHub Releases</small></div></li></ol><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/.github/workflows/release-desktop.yml" target="_blank" rel="noopener noreferrer">배포 파이프라인 보기 ↗</a></aside>
@@ -124,6 +124,43 @@
         <a class="subtle-link" href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개와 캐릭터 미리보기 ↗</a>
       </section>
 
+      <section class="project-research" aria-labelledby="research-title">
+        <p class="detail-kicker">PROBLEM & USER RESEARCH</p>
+        <h3 id="research-title">빈 시간을 채우되, 방송의 주도권은 스트리머에게</h3>
+        <p>혼자 방송을 진행하면 콘텐츠 진행과 채팅 확인, 대화의 흐름을 동시에 챙겨야 합니다. Live Buddy는 스트리머를 대신하는 진행자가 아니라, 필요할 때 불러 함께 이야기하고 방송에 반응을 더하는 AI 동료를 목표로 했습니다.</p>
+        <p class="research-caption">시청자 68명 사전 설문 · 기능 선호 문항은 복수 선택</p>
+        <div class="research-grid">
+          <article><strong>50%</strong><h4>놓친 채팅 짚어주기</h4><p>34명이 스트리머가 놓친 채팅을 알려주는 기능을 선택했습니다.</p></article>
+          <article><strong>39.7%</strong><h4>말이 없을 때 대화 이어가기</h4><p>27명이 스트리머가 말이 없을 때 오디오를 채우는 기능을 선택했습니다.</p></article>
+          <article><strong>38.2%</strong><h4>스트리머와 AI의 티키타카</h4><p>26명이 스트리머와 주고받는 AI 대화를 선택했습니다.</p></article>
+        </div>
+        <details class="project-evidence"><summary>설문에서 확인한 한계와 설계 방향 <span aria-hidden="true">＋</span></summary><div>
+          <p>지속적으로 쓰면 좋겠다는 응답은 13.2%, 한 번쯤 보면 재미있겠다는 응답은 60.3%, 필요 없거나 재미없을 것 같다는 응답은 17.6%였습니다. 일회성 관심과 장기 사용 의향은 달랐으며, 이 설문을 시장 전체의 수요나 제품 효과로 일반화하지 않았습니다.</p>
+          <p>방송 집중을 방해할 수 있다는 의견도 있었습니다. 사용자가 PTT·이름 호출로 참여 시점을 정하고, AI 참여를 제어하며 새 발화로 응답을 중단할 수 있도록 구성했습니다. 장기 사용성과 실제 방송 부담 감소는 추가 검증 과제입니다.</p>
+          <a class="subtle-link" href="https://sw-ai-streaming.notion.site/33698c4165298073af51e6182c158113" target="_blank" rel="noopener noreferrer">시청자 설문 원문 ↗</a>
+        </div></details>
+      </section>
+
+      <section class="broadcast-demo conversation-demo" aria-labelledby="conversation-demo-title">
+        <p class="detail-kicker">LIVE DEMO / 실제 구현 영상</p>
+        <h3 id="conversation-demo-title">이름을 부르면 대답하는, 나의 AI 방송 동료</h3>
+        <p>혼자 방송해도 함께 이야기할 동료가 있도록 만들었습니다. 데스크톱 앱에서 PTT(Push-to-Talk)로 말하거나, 음성 인식(STT)으로 설정한 AI의 이름을 부르면 AI가 호출을 인식하고 음성과 캐릭터 반응으로 대화를 이어갑니다.</p>
+        <figure class="conversation-demo-player">
+          <video controls playsinline preload="none" poster="assets/live-buddy/conversation-demo-poster.jpg" width="1920" height="1080" aria-label="Live Buddy 실제 구현 영상: AI 음성 대화와 OBS 송출" aria-describedby="conversation-demo-caption">
+            <source src="assets/live-buddy/conversation-demo.mp4" type="video/mp4">
+            <a href="assets/live-buddy/conversation-demo.mp4">음성이 포함된 구현 영상 열기</a>
+          </video>
+          <figcaption id="conversation-demo-caption">2분 26초 · 음성 포함 · 데스크톱 앱에서 AI와 대화하고 OBS 화면에 캐릭터가 함께 표시되는 실제 실행 영상입니다.</figcaption>
+        </figure>
+        <p class="video-note">재생 후 소리를 켜면 스트리머의 발화와 AI의 음성 응답을 함께 확인할 수 있습니다.</p>
+        <ol class="conversation-demo-flow">
+          <li><span class="step-number">01</span><div><h4>PTT 또는 이름으로 호출</h4><p>PTT로 음성을 입력하거나, 설정한 AI 이름을 불러 대화를 시작합니다.</p></div></li>
+          <li><span class="step-number">02</span><div><h4>AI가 알아듣고 대화</h4><p>인식된 발화에 AI가 응답하고, 음성과 캐릭터의 반응이 이어집니다.</p></div></li>
+          <li><span class="step-number">03</span><div><h4>OBS로 방송 화면에 함께 등장</h4><p>AI 캐릭터를 OBS 오버레이로 송출해 시청자도 방송 동료와의 대화를 함께 볼 수 있습니다.</p></div></li>
+        </ol>
+        <div class="conversation-demo-use"><h4>방송의 빈 시간을, 함께하는 대화로</h4><p>혼자 진행하는 방송에서 잠깐 쉬어가고 싶을 때 AI와 이야기를 나누고, 궁금하거나 모르는 내용은 바로 질문할 수 있습니다. 스트리머 곁에서 반응하는 친구 같은 동료를 지향합니다.</p></div>
+      </section>
+
       <section class="product-gallery" aria-labelledby="gallery-title">
         <p class="detail-kicker">PRODUCT SCREENS / 실제 구현 화면</p>
         <h3 id="gallery-title">직접 구현한 앱 화면과 방송 연동 화면</h3>
@@ -145,6 +182,28 @@
         <p class="team-context"><strong>팀 협업</strong> Spring Boot API, Gemini Live 연동, FastAPI 채팅 수집, Redis와 AWS 서버 인프라는 백엔드·AI 담당 팀원의 영역입니다. 해당 API·이벤트를 받아 사용자가 조작할 수 있는 화면과 동작으로 연결했습니다.</p>
       </section>
 
+      <section class="engineering-decisions" aria-labelledby="decisions-title">
+        <p class="detail-kicker">DESIGN DECISIONS / MY WORK</p><h3 id="decisions-title">장시간 켜 두는 방송 앱에 맞춘 기술 선택</h3>
+        <div class="decision-grid">
+          <article><span class="decision-label">ELECTRON</span><h4>웹 화면을 데스크톱 기능과 연결</h4><p>React 화면을 유지하면서 투명 오버레이 창과 독립적인 백그라운드 실행을 연결하기 위해 선택했습니다. 마이크·단축키·로컬 STT와 OBS 연동까지 앱의 실행 환경에서 다뤘습니다.</p></article>
+          <article><span class="decision-label">ZUSTAND</span><h4>여러 화면이 같은 방송 상태를 공유</h4><p>로그인·방송·캐릭터 상태를 여러 컴포넌트에서 사용하기 위해 도입했습니다. 간결한 상태 관리와 TypeScript 연동을 선택 이유로 정리했고, 방송 처리는 전역 서비스에 두어 화면 전환과 분리했습니다.</p></article>
+          <article><span class="decision-label">REACT HOOK FORM · ZOD</span><h4>입력 상태와 검증 규칙을 분리</h4><p>React Hook Form으로 입력·제출을 관리하고 Zod 스키마로 검증 규칙을 정의했습니다. 검증 결과를 화면에 반영하고 폼의 불필요한 리렌더링을 줄이는 방향으로 구성했습니다.</p></article>
+          <article><span class="decision-label">AXIOS · REQUEST QUEUE</span><h4>토큰 만료 때 요청을 한꺼번에 복구</h4><p>여러 요청이 동시에 401을 받아도 첫 요청만 토큰을 갱신하고 나머지는 큐에서 기다리게 했습니다. 성공하면 새 토큰으로 재시도하고, 갱신 실패 시 인증을 정리해 로그인으로 이동합니다.</p></article>
+        </div>
+        <div class="detail-resource-links"><a class="subtle-link" href="https://sw-ai-streaming.notion.site/34b98c41652980478adde105f9d74085" target="_blank" rel="noopener noreferrer">기술 선택을 정리한 개인 작업 노트 ↗</a><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/shared/lib/axios.ts" target="_blank" rel="noopener noreferrer">인증 갱신·대기 큐 코드 ↗</a></div>
+      </section>
+
+      <section class="system-flow" aria-labelledby="system-flow-title">
+        <p class="detail-kicker">END-TO-END FLOW / TEAM SYSTEM</p><h3 id="system-flow-title">입력에서 방송 화면까지, 역할을 나눠 연결한 구조</h3>
+        <p>제가 구현한 데스크톱 앱은 입력과 출력, 화면 상태를 담당하고, 팀원의 서버는 AI 세션과 채팅 처리, 방송 문맥을 담당합니다. 아래는 최종 발표 기록과 앱 구현을 기준으로 정리한 흐름입니다.</p>
+        <ol class="system-flow-list">
+          <li><span class="decision-label">01 / MY WORK</span><h4>음성을 입력으로</h4><p>PTT·호출어 → 로컬 STT → 텍스트 → 방송 WebSocket</p></li>
+          <li><span class="decision-label">02 / TEAM BACKEND & AI</span><h4>문맥을 응답으로</h4><p>Spring Boot ↔ Gemini Live · FastAPI 채팅 선별 → Redis Pub/Sub · 페르소나와 방송 문맥 반영</p></li>
+          <li><span class="decision-label">03 / MY WORK</span><h4>응답을 화면과 소리로</h4><p>음성·이벤트 수신 → 오디오 큐·립싱크·대화 표시 → OBS 오버레이</p></li>
+        </ol>
+        <details class="project-evidence"><summary>팀 서버의 문맥 유지·복구 방식 <span aria-hidden="true">＋</span></summary><div><p>최종 발표에는 Redis의 대화 순서 저장, 누적 대화 요약과 최근 대화를 결합한 AI 세션 갱신, 전환·복구 중 입력 임시 저장이 정리되어 있습니다. 이 서버 구현은 백엔드·AI 담당 팀원의 기여이며, 저는 해당 이벤트와 음성을 앱의 반응으로 연결했습니다.</p><a class="subtle-link" href="https://sw-ai-streaming.notion.site/38598c4165298061af61c325b15c52de" target="_blank" rel="noopener noreferrer">최종 발표의 서비스 구조 설명 ↗</a></div></details>
+      </section>
+
       <section aria-labelledby="implementation-title">
         <p class="detail-kicker">03 / CORE IMPLEMENTATION</p><h3 id="implementation-title">주요 구현 기능</h3>
         <p>핵심은 화면 전환과 방송의 생명주기를 분리하고, 입력·응답·출력을 이어주는 것이었습니다.</p>
@@ -155,6 +214,7 @@
           <details class="implementation-item"><summary><span class="implementation-no">03</span><span>음성 바이너리와 이벤트를 잇는 WebSocket</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>오디오 Blob은 큐에 보관하고 JSON은 이벤트 유형별로 분기해 <code>VOICE_CHUNK</code> 단위로 짝지어 처리합니다. 중단된 대화 턴의 후속 청크는 버려 이전 응답이 다시 재생되지 않게 합니다. 토큰·방송 ID 변화를 구독하고, 종료 원인에 따라 재연결 여부를 구분합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/services/broadcastWSBackgroundService.ts" target="_blank" rel="noopener noreferrer">WebSocket·인터럽트 처리 ↗</a></div></details>
           <details class="implementation-item"><summary><span class="implementation-no">04</span><span>TTS 청크 스케줄링과 오디오 기반 립싱크</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>Web Audio의 시간축에서 <code>ttsNextStartTime</code>을 기준으로 음성 청크의 시작 시점을 예약해 청크 사이의 공백을 줄였습니다. 컨테이너 디코딩이 실패하면 16bit PCM으로 직접 변환합니다. AnalyserNode로 오디오를 분석해 mouthOpen·viseme 값을 만들고 VRM·2D 캐릭터의 입 모양에 반영합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/src/shared/lib/vrmController.ts" target="_blank" rel="noopener noreferrer">VRM 표정·입 모양 처리 ↗</a></div></details>
           <details class="implementation-item"><summary><span class="implementation-no">05</span><span>OBS 투명 오버레이 자동 설정과 상태 동기화</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>obs-websocket v5 프로토콜을 구현해 OBS 인증과 브라우저 소스 생성을 자동화했습니다. 앱과 오버레이 사이의 상태는 localStorage·IPC·로컬 HTTP 브리지로 공유합니다. 로컬 상태를 주기적으로 읽어 캐릭터와 대화를 반영하고, 누락된 필드는 기본값으로 보정해 렌더링을 보호합니다.</p><a class="subtle-link" href="https://github.com/SKU-SW/fe/blob/main/swproject/electron/obsManager.ts" target="_blank" rel="noopener noreferrer">OBS 연결·브라우저 소스 설정 ↗</a></div></details>
+          <details class="implementation-item"><summary><span class="implementation-no">06</span><span>말을 끊어도 이전 AI 응답이 다시 나오지 않도록</span><span class="implementation-toggle" aria-hidden="true">＋</span></summary><div class="implementation-content"><p>스트리머의 새 발화가 시작되면 서버 응답을 기다리지 않고 로컬 음성과 대기 큐를 먼저 비웁니다. 중단된 응답의 턴 번호를 추적해 후속 청크를 버리고, 중단 완료 전 들어온 새 발화는 보관했다가 VOICE_INTERRUPTED 이후 전송하도록 연결했습니다.</p><div class="inline-pipeline"><span>로컬 재생 중단</span><b>→</b><span>이전 턴 청크 폐기</span><b>→</b><span>새 발화 보관</span><b>→</b><span>중단 완료 후 전송</span></div><a class="subtle-link" href="https://sw-ai-streaming.notion.site/36d98c416529800baed2d1f95dfef15e" target="_blank" rel="noopener noreferrer">프론트·서버 중단 처리 규약 ↗</a></div></details>
         </div>
       </section>
 
@@ -168,12 +228,14 @@
       <section aria-labelledby="challenge-title">
         <p class="detail-kicker">05 / CHALLENGES & SOLUTIONS</p><h3 id="challenge-title">음성·연결·입력 오류의 원인과 수정 내용</h3>
         <div class="challenge-cards"><article><h4>백엔드 로그를 활용한 AI 응답·음성·립싱크 연동</h4><dl><div><dt>문제</dt><dd>지연을 최소화하면서 AI 응답 내용에 맞는 음성과 캐릭터 입 모양을 함께 출력하는 것이 과제였습니다. 백엔드의 모델 실행 결과를 실제 앱의 반응으로 연결하는 프론트엔드 처리를 담당했습니다.</dd></div><div><dt>분석</dt><dd>백엔드 담당자가 공유한 로그를 바탕으로 응답·음성 청크의 흐름을 확인하고, 프론트에서 답변 표시와 입 모양 처리가 어떻게 이어지는지 함께 살폈습니다.</dd></div><div><dt>해결</dt><dd>프론트에서 응답과 음성 청크를 대응시켜 처리하고, 음성 재생과 캐릭터 입 모양을 연결했습니다.</dd></div></dl></article><article><h4>페이지를 바꾸면 종료되던 방송 연결</h4><dl><div><dt>문제</dt><dd>화면 컴포넌트가 해제되면서 WS·STT 연결까지 함께 정리됐습니다.</dd></div><div><dt>해결</dt><dd>핵심 로직을 전역 상주 서비스로 옮기고, 훅은 상태를 읽는 역할로 줄여 화면과 방송의 생명주기를 분리했습니다.</dd></div></dl></article><article><h4>macOS에서 반응하지 않던 음성 단축키</h4><dl><div><dt>문제</dt><dd>미서명 배포본의 권한 무효화로 전역 단축키가 입력을 받지 못하는 상황이 있었습니다.</dd></div><div><dt>해결</dt><dd>앱에 포커스가 있을 때 DOM 키 이벤트로 동작하는 PTT 대체 경로를 마련했습니다. 타이핑 중 오작동과 포커스 이탈도 처리했습니다.</dd></div></dl></article></div>
+        <div class="challenge-cards additional-case"><article><h4>동시에 만료된 API 요청의 중복 토큰 갱신</h4><dl><div><dt>문제</dt><dd>장시간 방송 중 여러 API가 동시에 401을 받으면 요청마다 토큰 갱신을 시도할 수 있었습니다.</dd></div><div><dt>해결</dt><dd>갱신 중 상태와 대기 큐를 두어 재발급을 하나로 모으고, 새 토큰을 받은 뒤 대기 요청을 재시도했습니다. 갱신 요청은 별도 클라이언트로 분리했습니다.</dd></div></dl></article></div>
         <p class="detail-learning">백엔드 로그와 프론트 처리 흐름을 함께 살피며, 모델 출력부터 사용자에게 보이는 응답까지 이어지는 연동 문제를 분석했습니다. 화면 전환과 연결 유지, 운영체제 권한 문제도 각각 분리해 처리했습니다.</p>
       </section>
 
-      <section aria-labelledby="next-step-title"><p class="detail-kicker">06 / NEXT STEPS</p><h3 id="next-step-title">구현한 범위와 다음 단계</h3><p>치지직 연동을 기반으로 서비스를 구현했으며, SOOP·YouTube 채팅 연동 확대와 캐릭터 라인업 확장은 향후 계획입니다. AI를 개발에 활용했고, 발표 자료의 기대 효과와 실제 측정된 성과는 구분합니다. 서비스 소개 사이트의 시청자 수·감정 비율은 화면 예시이므로 운영 성과로 사용하지 않았습니다.</p></section>
+      <section aria-labelledby="next-step-title"><p class="detail-kicker">06 / NEXT STEPS</p><h3 id="next-step-title">구현한 범위와 다음 단계</h3><p>현재 소개하는 범위는 치지직 기반 음성·채팅 대화와 캐릭터·OBS 연동입니다. SOOP·YouTube 등 채팅 플랫폼 확대, 게임·미디어 맥락 이해, 방송별 개인화 고도화는 향후 확장 방향입니다. 사전 설문은 운영 성과가 아니며, 벤치마크 문서의 응답 목표와 예비 테스트를 실제 서비스의 보장 성능으로 표시하지 않았습니다.</p></section>
 
       <div class="dialog-links"><a class="button primary" href="https://sku-sw.cloud/" target="_blank" rel="noopener noreferrer">서비스 소개 사이트 ↗</a><a class="button secondary" href="https://github.com/SKU-SW/fe" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button secondary" href="https://github.com/SKU-SW/fe/releases" target="_blank" rel="noopener noreferrer">배포 파일 ↗</a></div>
+      <section class="project-archive" aria-labelledby="archive-title"><p class="detail-kicker">PROJECT RECORDS</p><h3 id="archive-title">기획부터 구현까지 남긴 프로젝트 기록</h3><p>설문·개발 계획·개인 작업 노트·예외 처리 규약·최종 발표로 이어지는 기록입니다. 초기 기획과 최종 구현은 시점과 범위를 나눠 읽을 수 있도록 연결했습니다.</p><div class="archive-links"><a class="subtle-link" href="https://sw-ai-streaming.notion.site/30598c41652980f09b81edc2e134e50b" target="_blank" rel="noopener noreferrer">프로젝트 전체 기록 ↗</a><a class="subtle-link" href="https://sw-ai-streaming.notion.site/32198c41652980c3a65dfa3687893040" target="_blank" rel="noopener noreferrer">정현 개인 작업 노트 ↗</a><a class="subtle-link" href="https://sw-ai-streaming.notion.site/33d98c416529809e8fcac59f2e64491c" target="_blank" rel="noopener noreferrer">팀 역할·개발 계획 ↗</a><a class="subtle-link" href="https://sw-ai-streaming.notion.site/33d98c416529800e85b1c67361ce158e" target="_blank" rel="noopener noreferrer">음성 파이프라인 비교·검토 ↗</a><a class="subtle-link" href="https://sw-ai-streaming.notion.site/38598c4165298061af61c325b15c52de" target="_blank" rel="noopener noreferrer">최종 발표 대본 ↗</a></div></section>
       <div class="detail-source-note"><span>관련 자료</span><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=952-22" target="_blank" rel="noopener noreferrer">핵심 구현 발표 자료 ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=983-2" target="_blank" rel="noopener noreferrer">배포 발표 자료 ↗</a><a href="https://www.figma.com/design/3XYgX5ySKIdfoguvO7bSjR/SW-Project?node-id=986-41" target="_blank" rel="noopener noreferrer">문제 해결 발표 자료 ↗</a></div>
     </div>
   </dialog>
