@@ -68,6 +68,17 @@
     if (location.hash === '#live-buddy') history.replaceState(null, '', location.pathname + location.search + precedingHash);
   }
   openButton.addEventListener('click', () => openProject());
+  document.querySelectorAll('a[data-demo]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const video = document.getElementById(link.dataset.demo);
+      event.preventDefault();
+      openProject();
+      video.scrollIntoView({ block: 'center', behavior: 'instant' });
+      video.focus({ preventScroll: true });
+      video.play().catch(() => { /* Native controls remain available. */ });
+    });
+  });
   dialog.querySelector('.dialog-close').addEventListener('click', closeProject);
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeProject(); });
   dialog.addEventListener('close', finishClose);

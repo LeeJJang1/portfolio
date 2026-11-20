@@ -181,3 +181,28 @@ html[lang=en] .hero h1{font-size:clamp(38px,5.5vw,78px);line-height:1.12;letter-
 .study-note{margin:24px 0 0;font-size:12px;color:var(--subtle);line-height:1.9}
 @media(max-width:1100px) and (min-width:761px){.desktop-nav{gap:15px}.header-inner{gap:24px}}
 @media(max-width:760px){.data-study-grid{grid-template-columns:1fr;gap:18px}.data-study-card{padding:24px}.data-study-card h3{font-size:21px}.data-study-card p,.study-points dd{font-size:12px}.study-note{font-size:11px}}
+
+#connection-case { scroll-margin-top: 6rem; }
+.career-example { margin: 1.5rem 0 0; }
+.career-example h4 { margin: 0 0 .5rem; }
+.career-example p { max-width: 64ch; margin: 0 0 1rem; line-height: 1.65; }
+.career-example img { display: block; width: 100%; max-width: 48rem; height: auto; border-radius: .6rem; }
+
+.project-actions {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 20px;
+}
+.project-actions .text-link {
+  position: static;
+  margin: 0;
+  gap: 8px;
+}
+.project-actions small { font-weight: 400; color: var(--muted); }
+.survey-summary p { max-width: 76ch; line-height: 1.7; }
+.career-example .case-evidence > div { grid-template-columns: minmax(9em, 16em) 1fr; }
+@media (max-width: 600px) {
+  .career-example .case-evidence > div { grid-template-columns: 1fr; gap: 3px; }
+}

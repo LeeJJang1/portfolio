@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-02",
+  "sourceCommit": "278bd9842fd4cfa9b12e025547b89f5622ec44ba",
+  "environment": "Vitest 4.1.11 / jsdom; simulated WebSocket, Web Audio, mediaDevices and Electron bridge; no real server or device",
+  "passed": 15,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "keeps one connection when a subscribed view unmounts and remounts",
+      "status": "passed"
+    },
+    {
+      "name": "closes the socket and stops scheduled audio when the broadcast is cleared",
+      "status": "passed"
+    },
+    {
+      "name": "pairs binary audio and metadata in arrival order",
+      "status": "passed"
+    },
+    {
+      "name": "does not play a metadata event that has no preceding audio",
+      "status": "passed"
+    },
+    {
+      "name": "schedules successive PCM chunks on a continuous audio timeline",
+      "status": "passed"
+    },
+    {
+      "name": "drops old-turn audio while an interruption awaits acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "does not schedule a pending decode after broadcast termination",
+      "status": "passed"
+    },
+    {
+      "name": "reconnects an established connection after abnormal closure",
+      "status": "passed"
+    },
+    {
+      "name": "exposes a failed handshake without an endless retry",
+      "status": "passed"
+    },
+    {
+      "name": "exposes a permission-denied message and keeps recording inactive",
+      "status": "passed"
+    },
+    {
+      "name": "distinguishes a missing microphone from permission denial",
+      "status": "passed"
+    },
+    {
+      "name": "clears the broadcast and previous character dialogue after successful termination",
+      "status": "passed"
+    },
+    {
+      "name": "treats an already missing broadcast (404) as locally terminated",
+      "status": "passed"
+    },
+    {
+      "name": "retains the active session and exposes a server failure so termination can be retried",
+      "status": "passed"
+    },
+    {
+      "name": "does not terminate the broadcast when its view unmounts",
+      "status": "passed"
+    }
+  ]
+}
